@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KISSA MATCHA — Ceremonial grade matcha from the finest tea gardens of Japan. Experience the art of pure matcha." />
+  <title>KISSA MATCHA — The Art of Pure Matcha</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&family=Noto+Serif+JP:wght@200;300;400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================================================
+       NAVIGATION
+  ================================================ -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">
+      <span class="nav__logo-kissa">KISSA</span>
+      <span class="nav__logo-matcha">MATCHA</span>
+    </a>
+
+    <ul class="nav__menu" id="navMenu">
+      <li><a href="#about"      class="nav__link">About</a></li>
+      <li><a href="#products"   class="nav__link">Products</a></li>
+      <li><a href="#experience" class="nav__link">Experience</a></li>
+      <li><a href="#story"      class="nav__link">Story</a></li>
+      <li><a href="#gallery"    class="nav__link">Gallery</a></li>
+    </ul>
+
+    <div class="nav__right">
+      <a href="#contact" class="nav__cta">Order</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="nav__drawer" id="navDrawer" aria-hidden="true">
+    <ul class="nav__drawer-menu">
+      <li><a href="#about"      class="nav__drawer-link">About</a></li>
+      <li><a href="#products"   class="nav__drawer-link">Products</a></li>
+      <li><a href="#experience" class="nav__drawer-link">Experience</a></li>
+      <li><a href="#story"      class="nav__drawer-link">Story</a></li>
+      <li><a href="#gallery"    class="nav__drawer-link">Gallery</a></li>
+      <li><a href="#contact"    class="nav__drawer-link nav__drawer-link--cta">Order Now</a></li>
+    </ul>
+  </div>
+  <div class="nav__overlay" id="navOverlay"></div>
+
+
+  <!-- ================================================
+       1. HERO
+  ================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="images/hero-matcha.png" alt="" class="hero__img" />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__label reveal">— Uji, Japan</p>
+
+      <h1 class="hero__title reveal reveal--delay-1">
+        The Art of<br />
+        <em>Pure Matcha</em>
+      </h1>
+
+      <p class="hero__subtitle reveal reveal--delay-2">
+        一杯に宿る、日本の静寂
+      </p>
+
+      <p class="hero__desc reveal reveal--delay-3">
+        Sourced from century-old tea gardens.<br />
+        Stone-ground by masters who know no shortcuts.
+      </p>
+
+      <div class="hero__actions reveal reveal--delay-4">
+        <a href="#products" class="btn btn--primary">Explore Our Matcha</a>
+        <a href="#about"    class="btn btn--ghost">Our Story</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-text">Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       2. ABOUT
+  ================================================ -->
+  <section class="about section" id="about">
+    <div class="container">
+
+      <div class="about__grid">
+
+        <!-- Left: Images -->
+        <div class="about__images">
+          <div class="about__img-main reveal">
+            <img src="images/about-farm.png" alt="Uji tea fields in morning mist" />
+          </div>
+          <div class="about__img-accent reveal reveal--delay-1">
+            <img src="images/about-artisan.png" alt="Master artisan preparing matcha" />
+          </div>
+        </div>
+
+        <!-- Right: Text -->
+        <div class="about__text">
+          <p class="section__label reveal">About KISSA MATCHA</p>
+          <h2 class="section__title reveal reveal--delay-1">
+            Where Centuries<br />
+            Meet the Present
+          </h2>
+
+          <div class="about__body reveal reveal--delay-2">
+            <p>
+              Deep in the valleys of Uji, Kyoto, morning mist drifts over
+              tea bushes that have been tended by the same families for
+              generations. This is where KISSA MATCHA begins.
+            </p>
+            <p>
+              We work directly with a single-estate garden, harvesting only
+              the first flush of young leaves each spring — <em>Ichibancha</em> —
+              to capture the highest concentration of L-theanine and umami.
+            </p>
+            <p>
+              Granite stone mills turn at 30 rpm, slowly enough to preserve
+              colour, fragrance, and every nutrient. The result: matcha of
+              rare depth and vivid emerald brilliance.
+            </p>
+          </div>
+
+          <div class="about__stats reveal reveal--delay-3">
+            <div class="about__stat">
+              <span class="about__stat-num">1</span>
+              <span class="about__stat-label">Estate</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num">100+</span>
+              <span class="about__stat-label">Years of craft</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num">30</span>
+              <span class="about__stat-label">RPM stone mill</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       3. PRODUCTS
+  ================================================ -->
+  <section class="products section" id="products">
+    <div class="container">
+
+      <div class="section__header">
+        <p class="section__label reveal">Our Collection</p>
+        <h2 class="section__title reveal reveal--delay-1">
+          Matcha for Every Ritual
+        </h2>
+        <p class="section__lead reveal reveal--delay-2">
+          Each blend is carefully curated for a specific moment —<br class="br-desk" />
+          from the meditative morning bowl to the creative afternoon latte.
+        </p>
+      </div>
+
+      <div class="products__grid">
+
+        <!-- Product 1 -->
+        <article class="product-card reveal">
+          <div class="product-card__img-wrap">
+            <img src="images/product-ceremonial.png" alt="Ceremonial Grade Matcha tin" class="product-card__img" />
+            <span class="product-card__badge">Bestseller</span>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__grade">Ceremonial Grade</p>
+            <h3 class="product-card__name">Pure Ceremonial<br />Matcha</h3>
+            <p class="product-card__desc">
+              Single-harvest, first-flush leaves. Stone-ground to a
+              silky emerald powder with deep umami and a long, sweet finish.
+              Perfect for the traditional bowl preparation, <em>Chadate</em>.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">¥ 4,800 <small>/ 30g</small></span>
+              <a href="#contact" class="btn btn--small">Order</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card reveal reveal--delay-1">
+          <div class="product-card__img-wrap">
+            <img src="images/product-latte-blend.png" alt="Matcha Latte Blend pouch" class="product-card__img" />
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__grade">Latte Grade</p>
+            <h3 class="product-card__name">Matcha Latte<br />Blend</h3>
+            <p class="product-card__desc">
+              Blended for milk-based drinks. A bolder flavour profile that
+              holds its vibrancy against steamed milk, oat, or almond.
+              Rich, creamy, and unmistakably green.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">¥ 3,200 <small>/ 50g</small></span>
+              <a href="#contact" class="btn btn--small">Order</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card reveal reveal--delay-2">
+          <div class="product-card__img-wrap">
+            <img src="images/product-tea-set.png" alt="Premium Tea Set" class="product-card__img" />
+            <span class="product-card__badge product-card__badge--gold">Limited</span>
+          </div>
+          <div class="product-card__body">
+            <p class="product-card__grade">Gift Set</p>
+            <h3 class="product-card__name">Premium<br />Tea Set</h3>
+            <p class="product-card__desc">
+              A curated ritual in a lacquered box: Pure Ceremonial Matcha,
+              a hand-thrown Raku chawan, and a bamboo chasen.
+              Everything needed for your first, or finest, bowl.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">¥ 18,000 <small>/ set</small></span>
+              <a href="#contact" class="btn btn--small">Order</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       4. EXPERIENCE
+  ================================================ -->
+  <section class="experience" id="experience">
+    <div class="experience__bg">
+      <img src="images/experience-bg.png" alt="" />
+      <div class="experience__overlay"></div>
+    </div>
+
+    <div class="container experience__inner">
+      <div class="section__header section__header--light">
+        <p class="section__label reveal">The Sensory Profile</p>
+        <h2 class="section__title reveal reveal--delay-1">
+          A Cup That<br />Speaks in Layers
+        </h2>
+      </div>
+
+      <div class="experience__grid">
+
+        <div class="experience__item reveal">
+          <span class="experience__num">01</span>
+          <h3 class="experience__name">Aroma</h3>
+          <p class="experience__kanji">香り</p>
+          <p class="experience__desc">
+            Fresh cut grass, warm spring earth, and a whisper of ocean air —
+            the unmistakable first breath of ceremonial matcha.
+          </p>
+        </div>
+
+        <div class="experience__item reveal reveal--delay-1">
+          <span class="experience__num">02</span>
+          <h3 class="experience__name">Bitterness</h3>
+          <p class="experience__kanji">苦味</p>
+          <p class="experience__desc">
+            A clean, bright edge that awakens without harshness.
+            The bitterness of KISSA MATCHA is the bitterness of life
+            at its most alive.
+          </p>
+        </div>
+
+        <div class="experience__item reveal reveal--delay-2">
+          <span class="experience__num">03</span>
+          <h3 class="experience__name">Umami</h3>
+          <p class="experience__kanji">旨味</p>
+          <p class="experience__desc">
+            Deep, savoury sweetness born from shade-grown leaves rich
+            in L-theanine. A flavour that coats the palate like
+            warm velvet.
+          </p>
+        </div>
+
+        <div class="experience__item reveal reveal--delay-3">
+          <span class="experience__num">04</span>
+          <h3 class="experience__name">Finish</h3>
+          <p class="experience__kanji">余韻</p>
+          <p class="experience__desc">
+            Long, lingering, and impossibly smooth. The finish of a
+            great matcha is not an ending — it is an invitation
+            to return.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       5. STORY
+  ================================================ -->
+  <section class="story section" id="story">
+    <div class="story__bg">
+      <img src="images/story-bg.png" alt="Traditional Japanese tea room" />
+      <div class="story__overlay"></div>
+    </div>
+
+    <div class="container story__inner">
+
+      <div class="story__content">
+        <p class="section__label section__label--light reveal">Our Philosophy</p>
+
+        <h2 class="story__title reveal reveal--delay-1">
+          Ancient Ritual.<br />
+          <em>Modern Life.</em>
+        </h2>
+
+        <div class="story__body reveal reveal--delay-2">
+          <p>
+            The Japanese tea ceremony, <em>Chanoyu</em>, is not about drinking.
+            It is about presence — the radical act of being fully here,
+            in this moment, with this bowl.
+          </p>
+          <p>
+            KISSA MATCHA was founded on the belief that this philosophy
+            has never been more necessary. We live in an age of constant
+            noise. The morning bowl is a counterpoint: a few minutes of
+            intention, craft, and quiet.
+          </p>
+          <p>
+            We do not ask you to adopt a ceremony. We invite you to create
+            your own. A cold matcha at your desk. A whisked bowl before
+            dawn. A latte shared with someone you love.
+          </p>
+          <p>
+            Whatever your ritual, <strong>KISSA MATCHA</strong> is there —
+            pure, precise, and exactly what it needs to be.
+          </p>
+        </div>
+
+        <a href="#contact" class="btn btn--primary-light reveal reveal--delay-3">Begin Your Ritual</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       6. GALLERY
+  ================================================ -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+
+      <div class="section__header">
+        <p class="section__label reveal">Visual Journal</p>
+        <h2 class="section__title reveal reveal--delay-1">
+          The World of<br />KISSA MATCHA
+        </h2>
+      </div>
+
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--large reveal">
+          <img src="images/gallery-01-bowl.png" alt="Ceremonial matcha in a traditional chawan bowl" />
+          <div class="gallery__caption">The Perfect Bowl</div>
+        </div>
+        <div class="gallery__item reveal reveal--delay-1">
+          <img src="images/gallery-02-chasen.png" alt="Bamboo chasen tea whisk" />
+          <div class="gallery__caption">Bamboo Chasen</div>
+        </div>
+        <div class="gallery__item reveal reveal--delay-2">
+          <img src="images/gallery-03-tearoom.png" alt="Traditional Japanese tea room" />
+          <div class="gallery__caption">Tea Room</div>
+        </div>
+        <div class="gallery__item reveal">
+          <img src="images/gallery-04-latte.png" alt="Matcha latte in a glass" />
+          <div class="gallery__caption">Matcha Latte</div>
+        </div>
+        <div class="gallery__item reveal reveal--delay-1">
+          <img src="images/gallery-05-field.png" alt="Tea fields in Uji" />
+          <div class="gallery__caption">Uji Tea Fields</div>
+        </div>
+        <div class="gallery__item reveal reveal--delay-2">
+          <img src="images/gallery-06-ceramics.png" alt="Japanese ceramics with kintsugi detail" />
+          <div class="gallery__caption">Kintsugi Chawan</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       7. CONTACT / ORDER
+  ================================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+
+      <div class="contact__grid">
+
+        <!-- Left -->
+        <div class="contact__info">
+          <p class="section__label reveal">Contact &amp; Order</p>
+          <h2 class="section__title reveal reveal--delay-1">
+            Begin Your<br />Journey
+          </h2>
+          <p class="contact__lead reveal reveal--delay-2">
+            Whether you're ordering a single tin or inquiring about
+            wholesale, we respond to every message with care —
+            just as we approach every bowl.
+          </p>
+
+          <ul class="contact__details reveal reveal--delay-3">
+            <li>
+              <span class="contact__detail-label">Email</span>
+              <span class="contact__detail-value">hello@kissa-matcha.jp</span>
+            </li>
+            <li>
+              <span class="contact__detail-label">Origin</span>
+              <span class="contact__detail-value">Uji, Kyoto — Japan</span>
+            </li>
+            <li>
+              <span class="contact__detail-label">Shipping</span>
+              <span class="contact__detail-value">Worldwide • Express Available</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact__form-wrap reveal reveal--delay-2">
+          <form class="contact__form" id="contactForm" novalidate>
+
+            <div class="form__row">
+              <div class="form__field">
+                <label for="name" class="form__label">Name</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="Your name" required />
+              </div>
+              <div class="form__field">
+                <label for="email" class="form__label">Email</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="your@email.com" required />
+              </div>
+            </div>
+
+            <div class="form__field">
+              <label for="subject" class="form__label">I am interested in</label>
+              <select id="subject" name="subject" class="form__select">
+                <option value="">Select an option</option>
+                <option value="ceremonial">Pure Ceremonial Matcha</option>
+                <option value="latte">Matcha Latte Blend</option>
+                <option value="set">Premium Tea Set</option>
+                <option value="wholesale">Wholesale Inquiry</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form__field">
+              <label for="message" class="form__label">Message</label>
+              <textarea id="message" name="message" class="form__textarea" rows="5" placeholder="Tell us about your ritual…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              <span class="btn__text">Send Message</span>
+              <span class="btn__icon">→</span>
+            </button>
+
+            <p class="form__note">
+              We typically respond within 24 hours.
+            </p>
+
+          </form>
+
+          <!-- Success state -->
+          <div class="form__success" id="formSuccess" aria-live="polite">
+            <div class="form__success-icon">✦</div>
+            <h3>Thank you.</h3>
+            <p>Your message has been received. We will be in touch soon.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__top">
+        <a href="#hero" class="footer__logo">
+          <span>KISSA</span>
+          <span class="footer__logo-sub">MATCHA</span>
+        </a>
+        <p class="footer__tagline">
+          一杯に宿る、日本の静寂<br />
+          <em>The Art of Pure Matcha</em>
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#experience">Experience</a>
+        <a href="#story">Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2024 KISSA MATCHA. All rights reserved.</p>
+        <p class="footer__origin">Uji, Kyoto — Japan</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
